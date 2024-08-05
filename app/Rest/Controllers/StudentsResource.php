@@ -12,4 +12,7 @@ class StudentsResource extends RestController
      * @var class-string<\Lomkit\Rest\Http\Resource>
      */
     public static $resource = \App\Rest\Resources\ModelResource::class;
+
+
+/* Este fichero no se lo utiliza en el Proyecto -> Elimanarlo */
 }
