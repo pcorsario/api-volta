@@ -22,7 +22,11 @@ class TeacherResource extends RestResource
     public function fields(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
         return [
-            'id'
+            'id',
+            'dni',
+            'lastname',
+            'name',
+            'subject'
         ];
     }
 
