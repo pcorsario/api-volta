@@ -3,15 +3,16 @@
 namespace App\Rest\Resources;
 
 use App\Rest\Resource as RestResource;
-use App\Models\Student;
-class StudentResource extends RestResource
+use App\Models\Teacher;
+
+class TeacherResource extends RestResource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var class-string<\Illuminate\Database\Eloquent\Model>
      */
-    public static $model = Student::class;
+    public static $model = Teacher::class;
 
     /**
      * The exposed fields that could be provided
@@ -21,12 +22,7 @@ class StudentResource extends RestResource
     public function fields(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
         return [
-            'id',
-            'dni',
-            'lastname',
-            'name',
-            'subject'
-
+            'id'
         ];
     }
 
